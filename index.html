@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <title>Servicio</title>
+</head>
+<body style="margin-top: 20px;">
+  <div class="container">
+    <div class="logo-container">
+      <img src="./logo2.png">
+    </div>
+    <header>Reinscripción</header>
+
+    <form action="#" id="Form">
+
+      <div class="alert" style=
+      "width: 100%; 
+      background: #FFC600;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 900;
+      display: none;"
+      >Se enviaron tus datos</div>
+
+      <p>* Obligatorio</p>
+
+      <div class="form first">
+        <div class="details personal">
+          <span class="title">Datos Académicos</span>
+
+          <div class="fields">
+
+            <div class="input-field">
+              <label>* Nombre(s)</label>
+              <input type="text" id="name" name="name" placeholder="Ej.: Juan Jorge" required>
+            </div>
+
+            <div class="input-field">
+              <label>* Apellidos</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Ej.: Juárez Jiménez" required>
+            </div>
+
+            <div class="input-field">
+              <div class="periodo-escolar">
+                <label>* Periodo/Año</label><br>
+                <input type="radio" id="Ene - Jun" name="periodo" value="Ene - Jun" style="box-shadow: none;" required>
+                <label for="periodo">Ene - Jun</label>
+                <input type="radio" id="Ago - Dic" name="periodo" value="Ago - Dic" style="box-shadow: none;">
+                <label for="periodo">Ago - Dic</label>
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label>* Clave</label>
+              <input type="text" id="clave" name="clave" placeholder="Ej.: 123456" required>
+            </div>
+
+            <div class="input-field">
+              <label>* NUA</label>
+              <input type="number" id="nua" name="nua" placeholder="Ej.: 786420" required>
+            </div>
+
+            <div class="input-field">
+              <label>* RFC</label>
+              <input type="text" id="rfc" name="rfc" placeholder="Ej.: FHDN671008YN6" required>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="details ID">
+          <span class="title" id="curso">Curso</span>
+
+          <div class="fields">
+
+            <div class="input-field">
+              <label>* Programa y Horario</label>
+              <input type="text" id="program" name="program" placeholder="Ej.: Francés Lun-Jue 2:00 p.m." required>
+            </div>
+
+            <div class="input-field">
+              <label>Programa y Horario</label>
+              <input type="text" id="program2" name="program2" placeholder="Ej.: Francés Lun-Jue 2:00 p.m.">
+            </div>
+
+            <div class="input-field">
+              <label>Programa y Horario</label>
+              <input type="text" id="program3" name="program3" placeholder="Ej.: Francés Lun-Jue 2:00 p.m.">
+            </div>
+
+            <div class="input-field">
+              <label>* Nivel</label>
+              <input type="number" id="level" name="level" placeholder="Ej.: 300" required>
+            </div>
+
+            <div class="input-field">
+              <label>Nivel</label>
+              <input type="number" id="level2" name="level2" placeholder="Ej.: 300">
+            </div>
+
+            <div class="input-field">
+              <label>Nivel</label>
+              <input type="number" id="level3" name="level3" placeholder="Ej.: 300">
+            </div>
+
+          </div>
+
+          <button class="nextBtn">
+            <span class="btnText">Siguiente</span>
+            <i class="uil uil-arrow-circle-right"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Segunda parte -->
+
+      <div class="form second">
+        <div class="details address">
+          <span class="title">Datos Personales</span>
+
+          <div class="fields">
+
+            <div class="input-field">
+              <div class="estado">
+                <label for="estado">* Estado Cívil</label><br>
+                <select id="estado" name="estado" required>
+                  <option value="">Seleccione...</option>
+                  <option value="Soltero (a)">Soltero (a)</option>
+                  <option value="Casado (a)">Casado (a)</option>
+                  <option value="Viudo (a)">Viudo (a)</option>
+                  <option value="Divorciado (a)">Divorciado (a)</option>
+                  <option value="Divorciado (a)">Unión Libre</option>
+                  <option value="Divorciado (a)">Otro</option>
+                </select>
+              </div>
+            </div>
+            
+
+            <div class="input-field">
+              <label>* Domicilio en la Ciudad</label>
+              <input type="text" id="address" name="address" placeholder="Ej.: Villas #78 Zona Centro" required>
+            </div>
+
+            <div class="input-field">
+              <label>* Edad</label>
+              <input type="number" id="age" name="age" placeholder="Ej.: 22" required>
+            </div>
+
+            <div class="input-field">
+              <label>* Tipo Sanguíneo</label>
+              <input type="text" id="blood" name="blood" placeholder="Ej.: A+" required>
+            </div>
+
+            <!-- <div class="input-field">
+              <label>* Género</label>
+              <input type="Text" id="gender" name="gender" placeholder="Ej.: Masculino" required>
+            </div> -->
+
+            <div class="input-field">
+              <div class="estado">
+                <label for="gender">* Género</label><br>
+                <select id="gender" name="gender" required>
+                    <option value="">Seleccione...</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+              </div>
+          </div>          
+
+            <div class="input-field">
+              <label>* Nacionalidad</label>
+              <input type="text" id="nacionalidad" name="nacionalidad" placeholder="Ej.: Mexicana" required>
+            </div>
+
+            <div class="input-field">
+              <label>* Lugar de Nacimiento</label>
+              <input type="text" id="born" name="born" placeholder="Ej.: León, Gto." required>
+            </div>
+
+            <div class="input-field">
+              <label>* Télefono Fijo</label>
+              <input type="text" id="fijo" name="fijo" placeholder="Ej.: 477 123 4567" required>
+            </div>
+
+            <div class="input-field">
+              <label>* Celular</label>
+              <input type="text" id="mobile" name="mobile" placeholder="Ej.: 477 123 4567" required>
+            </div>
+
+            <div class="input-field">
+              <label>* Correo Electrónico</label>
+              <input type="email" id="email" name="email" placeholder="Ej.: correo@ugto.mx" required>
+            </div>
+
+        <div class="details ID">
+          <span class="title">Alumno UG</span>
+          <span class="title">¿Eres alumno de la UG? De lo contrario omite esta sección</span>
+
+          <div class="fields">
+
+            <div class="input-field">
+              <label>División</label>
+              <input type="text" id="division" name="division" placeholder="Ej.: DICIS">
+            </div>
+
+            <div class="input-field">
+              <label>Carrera</label>
+              <input type="text" id="carrera" name="carrera" placeholder="Ej.: LISC">
+            </div>
+
+            <div class="input-field">
+              <label>Semestre</label>
+              <input type="number" id="semester" name="semester" placeholder="Ej.: 9">
+            </div>
+
+            <div class="input-field">
+              <label>Ocupación actual del Alumno</label>
+              <input type="text" id="occupation" name="occupation" placeholder="Ej.: Estudiante">
+            </div>
+
+            <div class="input-field">
+              <label>Seguro Contra Accidentes - Beneficiario</label>
+              <input type="text" id="beneficiario" name="beneficiario" placeholder="Ej.: Paco Amaya Gonzalez">
+            </div>
+
+            <div class="input-field">
+              <label>Seguro Contra Accidentes - Domicilio</label>
+              <input type="text" id="domben" name="domben" placeholder="Ej.: Villas #234 Col. San Javier">
+            </div>
+  
+            <div class="fields">
+  
+              <div class="si">
+                <input type="checkbox" id="si" name="si" required>
+                  <label for="si">Manifiesto mi consentimiento para el tratamiento de los datos personales
+                    recabados en el siguiente formato los cuáles serán protegidos, incorporados y tratados 
+                    en la base de datos de alumnos de la Universidad de Guanajuato con fundamento en los artículos
+                    6 fracción I, artículos 8 y 9 de los lineamientos de protección de datos personles para el
+                    estado y municipíps de Guanajuato y del reglamento interno de la Universidad de Guanajuato
+                    artículo 11 fracción III cuya finalidad es administrar el expediente académico.
+                  </label>
+              </div>
+
+              <div class="input-field">
+                <label style="padding-top: 20px;">Introduce la fecha de hoy</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+  
+            </div>
+
+          </div>
+
+          <div class="buttons">
+            <div class="backBtn">
+              <i class="uil uil-arrow-circle-left"></i>
+              <span class="btnText">Atrás</span>
+            </div>
+          
+            <button class="submit">
+              <span class="submitBtn">Enviar</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+          </div>          
+
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./index.js"></script>
