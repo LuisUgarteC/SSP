@@ -11,4 +11,6 @@ Segunda parte del formulario
 
 Página web para la inscripción en el CEC de la UG. Permite a los estudiantes inscribirse de manera digital.
 
-[Link Netlify]
+## Link
+
+[https://forms-prueba.netlify.app/]
