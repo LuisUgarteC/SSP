@@ -9,7 +9,7 @@ Segunda parte del formulario
 
 ## Sobre el Proyecto
 
-Página web para la inscripción en el CEC de la UG. Permite a los estudiantes inscribirse de manera digital.
+Página web para la inscripción en el CAADI de la UG. Permite a los estudiantes inscribirse de manera digital.
 
 ## Link
 
